@@ -9,7 +9,7 @@ IMA Low Res
 * Instructor: J.H. Moon
   * Office: Online
   * Virtual Office Hours: by appointment via Slack, Discord or email.
-* Class meeting days and times: Monday, 8pm to 11pm ET
+* Class meeting days and times: Wednesday, 8pm to 11pm ET
 * [Syllabus](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
 * [Resources](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
 * [Course Schedule Overview](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
