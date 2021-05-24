@@ -1,3 +1,10 @@
+# folders for miscellaneous items
+other/
+.vscode/
+
+# OS files
+.DS_Store
+
 # Logs
 logs
 *.log
