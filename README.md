@@ -2,22 +2,21 @@
 IMA Low Res
 
 ## Class Materials
-* [Course Notes | Summer 2021]()
-* [Empty Sketch on Glitch]()
+* [Course Notes | Summer 2021](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
+* [Empty Sketch on Glitch](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
 
 ## Course Information
 * Instructor: J.H. Moon
   * Office: Online
   * Virtual Office Hours: by appointment via Slack, Discord or email.
 * Class meeting days and times: Monday, 8pm to 11pm ET
-* [Syllabus]()
-* [Resources]()
-* [Course Schedule Overview]()
-* [Course Policies]()
+* [Syllabus](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
+* [Resources](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
+* [Course Schedule Overview](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
+* [Course Policies](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
 
-### Description
+## Course Overview and Learning Outcomes
 Make Art with AI is an introductory course for students with no prior knowledge to explore and utilize machine learning models. Students will explore diverse and experimental methods in Machine Learning such as image classification, pose estimation, body segmentation, pitch detection and k-nearest neighbors algorithm (KNN). Working with a variety of pre-trained models and techniques, they will produce artistic, innovative and interactive projects on web platforms. Both practical and creative applications are to be investigated as students will be encouraged to design their own experiences and solutions.
-
  
 ### Student Learning Outcomes
 Upon completion of this course, students will be able to:
