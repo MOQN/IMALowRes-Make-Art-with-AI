@@ -3,6 +3,8 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Class Materials
 <!-- * [Course Notes | Summer 2021](https://github.com/MOQN/IMALowRes-Make-Art-with-AI) -->
+* [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
+  * Please review the materials in Week 1. Addtional workshops can be also provided.
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
 
 ## Course Information
