@@ -1,5 +1,5 @@
 # Make Art with AI | Summer 2021
-IMA Low Res
+IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Class Materials
 <!-- * [Course Notes | Summer 2021](https://github.com/MOQN/IMALowRes-Make-Art-with-AI) -->
