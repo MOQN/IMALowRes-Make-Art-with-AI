@@ -4,10 +4,11 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 ## Class Materials
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
 * Week1
-  * [Slides](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
+  * [Slides: Introduction to the course, ML, KNN and XAI](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
   * [Project 1. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
 * [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
-  * Please review the materials in Week 1. Addtional workshops can be also provided.
+  * Please review the materials in Week 1.
+  * Addtional workshops can be also provided. Please request!
 
 ## Course Information
 * Instructor: J.H. Moon
