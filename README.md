@@ -1,19 +1,24 @@
 # Make Art with AI | Summer 2021
-IMA Low Res
+IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Class Materials
-* [Course Notes | Summer 2021](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
-* [Empty Sketch on Glitch](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
+* [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
+* Week1
+  * [Slides: Introduction to the course, ML, KNN and XAI](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
+  * [Project 1. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
+* [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
+  * Please review the materials in Week 1.
+  * Addtional workshops can be also provided. Please request!
 
 ## Course Information
 * Instructor: J.H. Moon
   * Office: Online
   * Virtual Office Hours: by appointment via Discord or email.
-* Class meeting days and times: Wednesday, 8pm to 11pm ET
-* [Syllabus](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
-* [Resources](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
-* [Course Schedule Overview](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
-* [Course Policies](https://github.com/MOQN/IMALowRes-Make-Art-with-AI)
+* Class meeting days and times: Wednesday, 8pm to 11pm EDT
+* [Syllabus](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit?usp=sharing)
+  * [Resources](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.vv8cfz9wl2zr)
+  * [Course Schedule Overview](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.fryx8j1d3h84)
+  * [Course Policies](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.3oncvm2vtsnu)
 
 ## Course Overview and Learning Outcomes
 Make Art with AI is an introductory course for students with no prior knowledge to explore and utilize machine learning models. Students will explore diverse and experimental methods in Machine Learning such as image classification, pose estimation, body segmentation, pitch detection and k-nearest neighbors algorithm (KNN). Working with a variety of pre-trained models and techniques, they will produce artistic, innovative and interactive projects on web platforms. Both practical and creative applications are to be investigated as students will be encouraged to design their own experiences and solutions.
