@@ -3,15 +3,12 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Class Materials
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
-
-* Week2
+* Week 2
   * [Slides: PoseNet, Handpose and Interactive Objects](https://docs.google.com/presentation/d/1tuk5j6BX_bzvvEWaPtBI5PR9V4TipnsUYzDHUn3tzrU/edit?usp=sharing)
   * [Project2. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1PQ4DxPPqXOn0XlG0NkESyouAs2oGpPp3FrQ7qoP1lcc/edit?usp=sharing)
-
-* Week1
+* Week 1
   * [Slides: Introduction to the course, ML, KNN and XAI](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
   * [Project1. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
-
 * [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
   * Please review the materials in Week 1.
   * Addtional workshops can be also provided. Please request!
