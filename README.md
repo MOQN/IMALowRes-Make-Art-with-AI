@@ -28,12 +28,15 @@ Make Art with AI is an introductory course for students with no prior knowledge 
  
 ### Student Learning Outcomes
 Upon completion of this course, students will be able to:
-* recognize and expand their knowledge and experience in Machine Learning (ML), utilizing ML models in ml5.js;
-* review and practice the fundamentals of programming, especially Object-Oriented Programming and integrate the concepts into practical applications;
-* categorize ML models, and visualize and simulate the various data from the models, which can be identifiable, manageable and reusable;
+* recognize, categorize and utilize various Machine Learning (ML) models in ml5.js and expand their knowledge and experience in ML;
+* review, practice and produce the fundamentals of programming and integrate the concepts into creative or practical applications;
+* develop and explain a classification process with the KNN algorithm for unique, unconventional and meaningful interaction with the process;
+* discuss and apply the classification process in the context of Explainable AI (XAI);
+* visualize and simulate the various data from ML models and demonstrate the effective uses of the ML models.
 * apply diverse computational techniques with ML models to their own ideas and practices;
-* create artistic, innovative, practical and/or interactive artifacts on the web platform with machine learning models, and;
+* create artistic, innovative, practical and/or interactive artifacts on the web platform with ML models, and;
 * produce, demonstrate and evaluate generative art and/or creative applications by utilizing a combination of concepts and techniques discussed over the course.
+
 
 ### Structure & Teaching Methodology
 Learning and teaching Machine Learning can be a daunting task. This class seeks to reverse the conventional methods of teaching Machine Learning by applying a more friendly and approachable style, masking the complexity of the concepts and technologies. Students will review the fundamentals of programming first. Then they will use existing machine learning models (pre-trained) and apply them to their own ideas and outputs, similar to the way we utilize physical sensors with Arudino or devices such as Leap Motion and Kinect without a full understanding of its construction or blueprint.
