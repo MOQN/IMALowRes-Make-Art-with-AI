@@ -3,9 +3,12 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Class Materials
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
-* Week1
+* Week 2
+  * [Slides: PoseNet, Handpose and Interactive Objects](https://docs.google.com/presentation/d/1tuk5j6BX_bzvvEWaPtBI5PR9V4TipnsUYzDHUn3tzrU/edit?usp=sharing)
+  * [Project2. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1PQ4DxPPqXOn0XlG0NkESyouAs2oGpPp3FrQ7qoP1lcc/edit?usp=sharing)
+* Week 1
   * [Slides: Introduction to the course, ML, KNN and XAI](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
-  * [Project 1. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
+  * [Project1. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
 * [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
   * Please review the materials in Week 1.
   * Addtional workshops can be also provided. Please request!
@@ -25,12 +28,15 @@ Make Art with AI is an introductory course for students with no prior knowledge 
  
 ### Student Learning Outcomes
 Upon completion of this course, students will be able to:
-* recognize and expand their knowledge and experience in Machine Learning (ML), utilizing ML models in ml5.js;
-* review and practice the fundamentals of programming, especially Object-Oriented Programming and integrate the concepts into practical applications;
-* categorize ML models, and visualize and simulate the various data from the models, which can be identifiable, manageable and reusable;
+* recognize, categorize and utilize various Machine Learning (ML) models in ml5.js and expand their knowledge and experience in ML;
+* review, practice and produce the fundamentals of programming and integrate the concepts into creative or practical applications;
+* develop and explain a classification process with the KNN algorithm for unique, unconventional and meaningful interaction with the process;
+* discuss and apply the classification process in the context of Explainable AI (XAI);
+* visualize and simulate the various data from ML models and demonstrate the effective uses of the ML models.
 * apply diverse computational techniques with ML models to their own ideas and practices;
-* create artistic, innovative, practical and/or interactive artifacts on the web platform with machine learning models, and;
+* create artistic, innovative, practical and/or interactive artifacts on the web platform with ML models, and;
 * produce, demonstrate and evaluate generative art and/or creative applications by utilizing a combination of concepts and techniques discussed over the course.
+
 
 ### Structure & Teaching Methodology
 Learning and teaching Machine Learning can be a daunting task. This class seeks to reverse the conventional methods of teaching Machine Learning by applying a more friendly and approachable style, masking the complexity of the concepts and technologies. Students will review the fundamentals of programming first. Then they will use existing machine learning models (pre-trained) and apply them to their own ideas and outputs, similar to the way we utilize physical sensors with Arudino or devices such as Leap Motion and Kinect without a full understanding of its construction or blueprint.
