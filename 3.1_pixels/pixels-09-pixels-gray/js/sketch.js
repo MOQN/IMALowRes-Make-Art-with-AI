@@ -1,17 +1,3 @@
-let chars = [
-  " ",
-  ".",
-  "-",
-  "+",
-  "*",
-  "O",
-  "%",
-  "$",
-  "0",
-  "#",
-  "@"
-];
-
 let img;
 let cam;
 
@@ -30,13 +16,10 @@ function draw() {
   cam.loadPixels();
   img.loadPixels();
 
-  //console.log(cam.pixels.length); // w * h * 4
+  //console.log(cam.pixels.length); // w * h * 4(RGBA)
 
-  let gridSize = 15;
-
-  noStroke();
-  for (let y = 0; y < img.height; y += gridSize) {
-    for (let x = 0; x < img.width; x += gridSize) {
+  for (let y = 0; y < img.height; y++) {
+    for (let x = 0; x < img.width; x++) {
 
       let index = (x + y * img.width) * 4;
 
@@ -46,11 +29,13 @@ function draw() {
 
       let avg = (r + g + b) / 3;
 
-      let cIndex = int(map(avg, 0, 255, 0, chars.length - 1));
-      fill(255);
-      text(chars[cIndex], x, y);
+      img.pixels[index + 0] = avg; // R
+      img.pixels[index + 1] = avg; // G
+      img.pixels[index + 2] = avg; // B
+      img.pixels[index + 3] = 255; // A
     }
   }
-  //img.updatePixels();
-  //image(img, 0, 0);
+
+  img.updatePixels();
+  image(img, 0, 0);
 }

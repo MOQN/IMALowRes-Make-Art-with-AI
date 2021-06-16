@@ -1,11 +1,8 @@
-console.log('ml5 version:', ml5.version);
-
-
 let img;
 let cam;
 
 function setup() {
-  createCanvas( 640, 480 );
+  createCanvas(640, 480);
 
   cam = createCapture(VIDEO);
   //cam.resize(w, h);
@@ -26,7 +23,7 @@ function draw() {
   for (let y = 0; y < img.height; y += gridSize) {
     for (let x = 0; x < img.width; x += gridSize) {
 
-      let index = (x + y*img.width) * 4;
+      let index = (x + y * img.width) * 4;
 
       let r = cam.pixels[index + 0];
       let g = cam.pixels[index + 1];

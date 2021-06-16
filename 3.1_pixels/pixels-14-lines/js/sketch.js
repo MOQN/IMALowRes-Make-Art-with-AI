@@ -1,12 +1,9 @@
-console.log('ml5 version:', ml5.version);
-
-
 let img;
 let cam;
 
 
 function setup() {
-  createCanvas( 640, 480 );
+  createCanvas(640, 480);
 
   cam = createCapture(VIDEO);
   //cam.resize(w, h);
@@ -30,13 +27,13 @@ function draw() {
     beginShape();
     for (let x = 0; x < img.width; x += gridSize) {
 
-      let index = (x + y*img.width) * 4;
+      let index = (x + y * img.width) * 4;
 
       let r = cam.pixels[index + 0];
       let g = cam.pixels[index + 1];
       let b = cam.pixels[index + 2];
 
-      let avg = (r + g + b)/3;
+      let avg = (r + g + b) / 3;
 
       let yOffset = map(avg, 0, 255, 1, gridSize) * 2;
       curveVertex(x, y + yOffset);

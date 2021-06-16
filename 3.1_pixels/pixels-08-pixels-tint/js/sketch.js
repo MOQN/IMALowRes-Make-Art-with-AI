@@ -16,12 +16,10 @@ function draw() {
   cam.loadPixels();
   img.loadPixels();
 
-  //console.log(cam.pixels.length); // w * h * 4
+  //console.log(cam.pixels.length); // w * h * 4(RGBA)
 
-  let gridSize = 15;
-  noStroke();
-  for (let y = 0; y < img.height; y += gridSize) {
-    for (let x = 0; x < img.width; x += gridSize) {
+  for (let y = 0; y < img.height; y++) {
+    for (let x = 0; x < img.width; x++) {
 
       let index = (x + y * img.width) * 4;
 
@@ -29,14 +27,13 @@ function draw() {
       let g = cam.pixels[index + 1];
       let b = cam.pixels[index + 2];
 
-      let avg = (r + g + b) / 3;
-
-      let size = map(avg, 0, 255, 1, gridSize);
-
-      fill(255);
-      ellipse(x, y, size, size);
+      img.pixels[index + 0] = r; // R
+      img.pixels[index + 1] = 0; // G
+      img.pixels[index + 2] = 0; // B
+      img.pixels[index + 3] = 255; // A
     }
   }
-  //img.updatePixels();
-  //image(img, 0, 0);
+
+  img.updatePixels();
+  image(img, 0, 0);
 }

@@ -1,8 +1,5 @@
-console.log('ml5 version:', ml5.version);
-
-
 function setup() {
-  createCanvas( 600, 400 );
+  createCanvas(600, 400);
 
   noStroke();
   let gridSize = 40;
@@ -12,7 +9,7 @@ function setup() {
       fill(random(255), random(255), random(255));
       rect(x, y, gridSize, gridSize);
       fill(255);
-      text(count, x+5, y+15);
+      text(count, x + 5, y + 15);
       count++;
     }
   }
