@@ -3,6 +3,11 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Class Materials
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
+* Main Project
+  * [Make Art with AI](https://docs.google.com/document/d/1wEHQckrIxtYHAeajhaSw7R-xvwDD1yiKfBmxzo8DmtA/edit?usp=sharing)
+* Week 3
+  * [Slides: Pixel Manipulation + BodyPix,  Audio Input + Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
+  * [Generative Visuals with BodyPix or CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)  
 * Week 2
   * [Slides: PoseNet, Handpose and Interactive Objects](https://docs.google.com/presentation/d/1tuk5j6BX_bzvvEWaPtBI5PR9V4TipnsUYzDHUn3tzrU/edit?usp=sharing)
   * [Project2. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1PQ4DxPPqXOn0XlG0NkESyouAs2oGpPp3FrQ7qoP1lcc/edit?usp=sharing)
