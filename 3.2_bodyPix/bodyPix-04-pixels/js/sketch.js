@@ -1,19 +1,14 @@
-// Oct 13 2019
-// MOQN
-
 /*
-This is based on the example code of ml5.js
-https://ml5js.org/
+  This is based on the references of ml5.js
+  https://ml5js.org/
 */
 console.log('ml5 version:', ml5.version);
-
 
 let bodypix;
 let bp;
 
 let cam;
 let img;
-
 
 const options = {
   outputStride: 8, // 8, 16, or 32, default is 16
@@ -52,14 +47,11 @@ PartId  PartName
 23      leftHand
 */
 
-
 function setup() {
   createCanvas(640, 480);
 
   cam = createCapture(cam);
-  cam.size(width, height);
   // cam.hide();
-
   img = createImage(width, height);
 
   bodypix = ml5.bodyPix(cam, modelReady);
@@ -77,37 +69,36 @@ function draw() {
     img.loadPixels();
     for (let y = 0; y < h; y++) {
       for (let x = 0; x < w; x++) {
-        let index = x + y*w; // ***
+        let index = x + y * w; // ***
 
-        if ( data[index] >= 0 ) {
-          img.pixels[index*4 + 0] = 255;
-          img.pixels[index*4 + 1] = 0;
-          img.pixels[index*4 + 2] = 0;
-          img.pixels[index*4 + 3] = 255;
+        if (data[index] >= 0) {
+          // if the data is one of the body segments
+          img.pixels[index * 4 + 0] = 255;
+          img.pixels[index * 4 + 1] = 0;
+          img.pixels[index * 4 + 2] = 0;
+          img.pixels[index * 4 + 3] = 255;
         } else {
           // transparent
-          img.pixels[index*4 + 0] = 0;
-          img.pixels[index*4 + 1] = 0;
-          img.pixels[index*4 + 2] = 0;
-          img.pixels[index*4 + 3] = 0;
+          img.pixels[index * 4 + 0] = 0;
+          img.pixels[index * 4 + 1] = 0;
+          img.pixels[index * 4 + 2] = 0;
+          img.pixels[index * 4 + 3] = 0;
         }
       }
     }
     img.updatePixels();
   }
-  image( cam, 0, 0 );
-  image( img, 0, 0 );
+  image(cam, 0, 0);
+  image(img, 0, 0);
 }
 
 
-
-///// bodypix functions /////
+///// bodyPix functions /////
 
 function modelReady() {
   console.log('Model Ready!');
   bodypix.segmentWithParts(gotResults, options);
 }
-
 
 function gotResults(error, result) {
   if (error) {
@@ -115,8 +106,6 @@ function gotResults(error, result) {
     return;
   }
   bp = result;
-
-  //console.log( bp.segmentation.data.length ); 320 * 240
 
   bodypix.segmentWithParts(gotResults, options);
 }

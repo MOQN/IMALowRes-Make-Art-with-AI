@@ -1,19 +1,15 @@
-// Oct 13 2019
-// MOQN
-
 /*
-This is based on the example code of ml5.js
-https://ml5js.org/
+  This is based on the references of ml5.js
+  https://ml5js.org/
 */
 console.log('ml5 version:', ml5.version);
-
 
 let bodypix;
 let bp;
 
 let cam;
-let img;
-
+let img; // to display
+let inputImg;
 
 const options = {
   outputStride: 8, // 8, 16, or 32, default is 16
@@ -57,12 +53,13 @@ function setup() {
   createCanvas(640, 480);
 
   cam = createCapture(cam);
-  cam.size(width/2, height/2); // 320 x 240
+  cam.size(width / 2, height / 2); // 320 x 240
   // cam.hide();
 
-  img = createImage(width/2, height/2);
+  inputImg = createImage(width / 2, height / 2); // 320 x 240
+  img = createImage(inputImg.width, inputImg.height);
 
-  bodypix = ml5.bodyPix(cam, modelReady);
+  bodypix = ml5.bodyPix(modelReady);
 }
 
 
@@ -77,46 +74,42 @@ function draw() {
     img.loadPixels();
     for (let y = 0; y < h; y++) {
       for (let x = 0; x < w; x++) {
-        let index = x + y*w; // ***
+        let index = x + y * w; // ***
 
-        if ( data[index] == 21 ) {
+        if (data[index] == 21) {
           // if "rightHand", draw with black color
-          img.pixels[index*4 + 0] = 0;
-          img.pixels[index*4 + 1] = 0;
-          img.pixels[index*4 + 2] = 0;
-          img.pixels[index*4 + 3] = 255;
-        }
-        else if (data[index] == 23) {
+          img.pixels[index * 4 + 0] = 0;
+          img.pixels[index * 4 + 1] = 0;
+          img.pixels[index * 4 + 2] = 0;
+          img.pixels[index * 4 + 3] = 255;
+        } else if (data[index] == 23) {
           // if "leftHand", draw with white color
-          img.pixels[index*4 + 0] = 255;
-          img.pixels[index*4 + 1] = 255;
-          img.pixels[index*4 + 2] = 255;
-          img.pixels[index*4 + 3] = 255;
-        }
-        else {
+          img.pixels[index * 4 + 0] = 255;
+          img.pixels[index * 4 + 1] = 255;
+          img.pixels[index * 4 + 2] = 255;
+          img.pixels[index * 4 + 3] = 255;
+        } else {
           // transparent
-          img.pixels[index*4 + 0] = 0;
-          img.pixels[index*4 + 1] = 0;
-          img.pixels[index*4 + 2] = 0;
-          img.pixels[index*4 + 3] = 0;
+          img.pixels[index * 4 + 0] = 0;
+          img.pixels[index * 4 + 1] = 0;
+          img.pixels[index * 4 + 2] = 0;
+          img.pixels[index * 4 + 3] = 0;
         }
       }
     }
     img.updatePixels();
   }
   //image( cam, 0, 0, width, height );
-  image( img, 0, 0, width, height );
+  image(img, 0, 0, width, height);
 }
 
 
-
-///// bodypix functions /////
+///// bodyPix functions /////
 
 function modelReady() {
   console.log('Model Ready!');
-  bodypix.segmentWithParts(gotResults, options);
+  getSegments();
 }
-
 
 function gotResults(error, result) {
   if (error) {
@@ -124,7 +117,14 @@ function gotResults(error, result) {
     return;
   }
   bp = result;
-  //console.log( bp.segmentation.data.length ); 320 * 240 - 1
 
-  bodypix.segmentWithParts(gotResults, options);
+  //console.log(bp.segmentation.data.length); //320 * 240
+  getSegments();
+}
+
+function getSegments() {
+  // update the inputImage from the current frame of the cam
+  inputImg.copy(cam, 0, 0, cam.width, cam.height, 0, 0, inputImg.width, inputImg.height);
+
+  bodypix.segmentWithParts(inputImg.canvas, gotResults, options);
 }

@@ -1,23 +1,19 @@
-// Oct 13 2019
-// MOQN
-
 /*
-This is based on the example code of ml5.js
-https://ml5js.org/
+  This is based on the references of ml5.js
+  https://ml5js.org/
 */
 console.log('ml5 version:', ml5.version);
 
-
 let bodypix;
 let bp;
-
 const options = {
   outputStride: 8, // 8, 16, or 32, default is 16
   segmentationThreshold: 0.3, // 0 - 1, defaults to 0.5
 }
 
 let cam;
-let img;
+let img; // to display
+let inputImg;
 
 let balls = [];
 
@@ -25,15 +21,19 @@ let balls = [];
 function setup() {
   createCanvas(640, 480);
 
-  img = createImage(width/2, height/2);
   cam = createCapture(cam);
-  cam.size(width/2, height/2); // 320 x 240
+  cam.size(width / 2, height / 2); // 320 x 240
   // cam.hide();
-  bodypix = ml5.bodyPix(cam, modelReady);
 
-  balls.push( new Ball( width/2, height/2) );
-  balls.push( new Ball( width/2, height/2) );
-  balls.push( new Ball( width/2, height/2) );
+  inputImg = createImage(width / 2, height / 2); // 320 x 240
+  img = createImage(inputImg.width, inputImg.height);
+
+  bodypix = ml5.bodyPix(modelReady);
+
+  // generate balls
+  for (let i = 0; i < 3; i++) {
+    balls.push(new Ball(width / 2, height / 2));
+  }
 }
 
 
@@ -48,28 +48,27 @@ function draw() {
     img.loadPixels();
     for (let y = 0; y < h; y++) {
       for (let x = 0; x < w; x++) {
-        let index = x + y*w; // ***
+        let index = x + y * w; // ***
 
-        if ( data[index] == 21 || data[index] == 23) {
+        if (data[index] == 21 || data[index] == 23) {
           // if "rightHand" and "leftHand", set the color red
-          img.pixels[index*4 + 0] = 255;
-          img.pixels[index*4 + 1] = 0;
-          img.pixels[index*4 + 2] = 0;
-          img.pixels[index*4 + 3] = 255;
-        }
-        else {
+          img.pixels[index * 4 + 0] = 255;
+          img.pixels[index * 4 + 1] = 0;
+          img.pixels[index * 4 + 2] = 0;
+          img.pixels[index * 4 + 3] = 255;
+        } else {
           // transparent
-          img.pixels[index*4 + 0] = 0;
-          img.pixels[index*4 + 1] = 0;
-          img.pixels[index*4 + 2] = 0;
-          img.pixels[index*4 + 3] = 0;
+          img.pixels[index * 4 + 0] = 0;
+          img.pixels[index * 4 + 1] = 0;
+          img.pixels[index * 4 + 2] = 0;
+          img.pixels[index * 4 + 3] = 0;
         }
       }
     }
     img.updatePixels();
   }
   //image( cam, 0, 0, width, height );
-  image( img, 0, 0, width, height );
+  image(img, 0, 0, width, height);
 
   for (let b of balls) {
     b.move();
@@ -78,11 +77,13 @@ function draw() {
     b.checkPixelColor(img);
   }
 
+  // display text
+  fill(0, 255, 0);
+  text("Use your hands to interact with the balls.");
 }
 
 
-
-///// A bouncing ball /////
+///// Bouncing Ball /////
 
 class Ball {
   constructor(x, y) {
@@ -106,10 +107,20 @@ class Ball {
     }
   }
   checkPixelColor(img) {
-    let x = int( map(this.x, 0, width, 0, img.width) ); // should be int!
-    let y = int( map(this.y, 0, width, 0, img.height) );
-    let c = img.get(x, y);
-    if (red(c) == 255) {
+    let x = int(map(this.x, 0, width, 0, img.width)); // should be int!
+    let y = int(map(this.y, 0, width, 0, img.height));
+
+    //let color = img.get(x, y); // slow...
+    //let r = red(color);
+
+    let index = (x + y * img.width) * 4;
+    let r = img.pixels[index + 0];
+    let g = img.pixels[index + 1];
+    let b = img.pixels[index + 2];
+    let a = img.pixels[index + 3];
+
+    // if the pixel color is red (if it's on the body segments)
+    if (r == 255) {
       this.rad = 30;
     } else {
       this.rad = 10;
@@ -119,22 +130,18 @@ class Ball {
     push();
     noStroke();
     fill(this.color);
-    ellipse(this.x, this.y, this.rad*2, this.rad*2);
+    ellipse(this.x, this.y, this.rad * 2, this.rad * 2);
     pop();
   }
 }
 
 
-
-
-
-///// bodypix functions /////
+///// bodyPix functions /////
 
 function modelReady() {
   console.log('Model Ready!');
-  bodypix.segmentWithParts(gotResults, options);
+  getSegments();
 }
-
 
 function gotResults(error, result) {
   if (error) {
@@ -143,7 +150,13 @@ function gotResults(error, result) {
   }
   bp = result;
 
-  //console.log( bp.segmentation.data.length ); 320 * 240 - 1
+  //console.log(bp.segmentation.data.length); //320 * 240
+  getSegments();
+}
 
-  bodypix.segmentWithParts(gotResults, options);
+function getSegments() {
+  // update the inputImage from the current frame of the cam
+  inputImg.copy(cam, 0, 0, cam.width, cam.height, 0, 0, inputImg.width, inputImg.height);
+
+  bodypix.segmentWithParts(inputImg.canvas, gotResults, options);
 }

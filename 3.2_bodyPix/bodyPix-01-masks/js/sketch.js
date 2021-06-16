@@ -1,5 +1,5 @@
 /*
-  This is based on the example code of ml5.js
+  This is based on the references of ml5.js
   https://ml5js.org/
 */
 console.log('ml5 version:', ml5.version);
@@ -17,10 +17,10 @@ const options = {
 }
 
 function setup() {
-  createCanvas(320, 240);
+  createCanvas(640, 480);
 
   cam = createCapture(cam);
-  cam.size(320, 240);
+  cam.size(640, 480);
   // cam.hide();
 
   bodypix = ml5.bodyPix(cam, modelReady);
