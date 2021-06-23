@@ -50,7 +50,7 @@ PartId  PartName
 function setup() {
   createCanvas(640, 480);
 
-  cam = createCapture(cam);
+  cam = createCapture(VIDEO);
   // cam.hide();
   img = createImage(width, height);
 

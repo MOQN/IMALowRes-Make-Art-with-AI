@@ -50,7 +50,7 @@ let newPose = null;
 
 function setupPoseNet() {
   // init webcam
-  cam = createCapture(cam);
+  cam = createCapture(VIDEO);
   cam.size(640, 480);
   cam.hide();
 

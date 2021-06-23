@@ -75,7 +75,7 @@ let myColor = [
 function setup() {
   createCanvas(640, 480);
 
-  cam = createCapture(cam);
+  cam = createCapture(VIDEO);
   // cam.hide();
   bodypix = ml5.bodyPix(cam, modelReady);
 }

@@ -21,7 +21,7 @@ let balls = [];
 function setup() {
   createCanvas(640, 480);
 
-  cam = createCapture(cam);
+  cam = createCapture(VIDEO);
   cam.size(width / 2, height / 2); // 320 x 240
   // cam.hide();
 

@@ -29,7 +29,7 @@ let predictions = [];
 
 function setupHandpose() {
   // init webcam
-  cam = createCapture(cam);
+  cam = createCapture(VIDEO);
   cam.size(640, 480);
   cam.hide();
   // init Handpose
