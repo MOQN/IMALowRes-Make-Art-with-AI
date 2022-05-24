@@ -22,7 +22,7 @@ usp=sharing)
 
 * Week 2
   * [Slides: k-nearest neighbors algorithm (KNN)](https://docs.google.com/presentation/d/1tuk5j6BX_bzvvEWaPtBI5PR9V4TipnsUYzDHUn3tzrU/edit?usp=sharing)
-  * [Project 2. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?
+  * [Project 2. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?)
 
 * Week 3
   * [Slides: Pixel Manipulation + BodyPix,  Audio Input + Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
