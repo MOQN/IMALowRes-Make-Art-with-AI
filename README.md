@@ -1,19 +1,28 @@
 # Make Art with AI | Summer 2022
 IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
-## Class Materials
+## Empty Project with p5.js and ml5.js
+* [Empty Project on p5.js Web Editor](https://editor.p5js.org/MOQN/sketches/2RIVSxae0)
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
+* [Empty Project for Text Editor]()
+
+## Class Materials
 * Main Project
   * [Make Art with AI](https://docs.google.com/document/d/1wEHQckrIxtYHAeajhaSw7R-xvwDD1yiKfBmxzo8DmtA/edit?usp=sharing)
-* Week 3
-  * [Slides: Pixel Manipulation + BodyPix,  Audio Input + Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
-  * [Generative Visuals with BodyPix or CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)  
-* Week 2
-  * [Slides: PoseNet, Handpose and Interactive Objects](https://docs.google.com/presentation/d/1tuk5j6BX_bzvvEWaPtBI5PR9V4TipnsUYzDHUn3tzrU/edit?usp=sharing)
-  * [Project2. Interactive Experience with Body Movement](https://docs.google.com/document/d/1PQ4DxPPqXOn0XlG0NkESyouAs2oGpPp3FrQ7qoP1lcc/edit?usp=sharing)
+
 * Week 1
   * [Slides: Introduction to the course, ML, KNN and XAI](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
-  * [Project1. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
+  * [Project1. Interactive Experience with Body Movement](https://docs.google.com/document/d/1PQ4DxPPqXOn0XlG0NkESyouAs2oGpPp3FrQ7qoP1lcc/edit?usp=sharing) 
+usp=sharing)
+
+* Week 2
+  * [Slides: PoseNet, Handpose and Interactive Objects](https://docs.google.com/presentation/d/1tuk5j6BX_bzvvEWaPtBI5PR9V4TipnsUYzDHUn3tzrU/edit?usp=sharing)
+  * [Project 2. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?
+
+* Week 3
+  * [Slides: Pixel Manipulation + BodyPix,  Audio Input + Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
+  * [Project 3. (Optional) Generative Visuals with BodyPix or CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)  
+
 * [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
   * Please review the materials in Week 1.
   * Addtional workshops can be also provided. Please request!
@@ -22,7 +31,7 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 * Instructor: J.H. Moon
   * Office: Online
   * Virtual Office Hours: by appointment via Discord or email.
-* Class meeting days and times: Tuesday, 8pm to 11pm EDT
+* Class meeting days and times: Tuesday, 8pm to 10:30pm ET
 * [Syllabus](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit?usp=sharing)
   * [Resources](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.vv8cfz9wl2zr)
   * [Course Schedule Overview](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.fryx8j1d3h84)
