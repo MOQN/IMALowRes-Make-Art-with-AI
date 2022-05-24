@@ -11,7 +11,7 @@ function setup() {
 
   cam = createCapture(VIDEO, camReady);
   cam.size(640, 480);
-  cam.hide();
+  // cam.hide();
 }
 
 function draw() {
@@ -19,12 +19,12 @@ function draw() {
   
   image(cam, 0, 0);
   
-  noStroke();
-  fill(0, 255, 0);
   if (pose != undefined) {
     for (let p of pose.keypoints) {
       push();
-      translate(p.x, p.y); // utilize z in your 3D sketch
+      translate(p.x, p.y);
+      noStroke();
+      fill(0, 255, 0);
       circle(0, 0, 5);
       text(p.name, 10, 10);
       text(p.score.toFixed(2), 10, 25);
@@ -45,7 +45,7 @@ async function loadPoseDetectionModel() {
   const detectorConfig = {
     runtime: "tfjs",
     enableSmoothing: true,
-    modelType: "full",
+    modelType: "full",  // (i.e., 'lite', 'full', 'heavy')
   };
   detector = await poseDetection.createDetector(model, detectorConfig);
   console.log("Model Loaded!");

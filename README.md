@@ -15,7 +15,7 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
   * [Make Art with AI](https://docs.google.com/document/d/1wEHQckrIxtYHAeajhaSw7R-xvwDD1yiKfBmxzo8DmtA/edit?usp=sharing)
 
 * Week 1
-  * [Slides: Introduction to the course, ML, PoseNet, Handpose and Interactive Objects](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
+  * [Slides: Introduction to the Course, ml5.js and Pose Estimation](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
   * [Project1. Interactive Experience with Body Movement](https://docs.google.com/document/d/1PQ4DxPPqXOn0XlG0NkESyouAs2oGpPp3FrQ7qoP1lcc/edit?usp=sharing) 
 usp=sharing)
 
