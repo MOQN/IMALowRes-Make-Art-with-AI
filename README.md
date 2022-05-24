@@ -1,10 +1,12 @@
 # Make Art with AI | Summer 2022
 IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
-## Class Materials
+## Empty Project with p5.js and ml5.js libraries
 * [Empty Project on p5.js Web Editor](https://editor.p5js.org/MOQN/sketches/2RIVSxae0)
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
 * [Empty Project for Text Editor]()
+
+## Class Materials
 * Main Project
   * [Make Art with AI](https://docs.google.com/document/d/1wEHQckrIxtYHAeajhaSw7R-xvwDD1yiKfBmxzo8DmtA/edit?usp=sharing)
 <!-- * Week 3
