@@ -4,7 +4,7 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 ## Empty Project with p5.js and ml5.js
 * [Empty Project on p5.js Web Editor](https://editor.p5js.org/MOQN/sketches/2RIVSxae0)
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
-* [Empty Project for Text Editor]()
+* Empty Project for Text Editor
 
 ## Class Materials
 * Main Project
@@ -31,7 +31,9 @@ usp=sharing)
 * Instructor: J.H. Moon
   * Office: Online
   * Virtual Office Hours: by appointment via Discord or email.
+
 * Class meeting days and times: Tuesday, 8pm to 10:30pm ET
+
 * [Syllabus](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit?usp=sharing)
   * [Resources](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.vv8cfz9wl2zr)
   * [Course Schedule Overview](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.fryx8j1d3h84)
