@@ -1,4 +1,7 @@
 /*
+  Please note that this example code uses the 0.10.4 version of ml5.js
+  since BodyPix's segmentWithParts() function doesn't work in the latest version.
+
   This is based on the references of ml5.js
   https://ml5js.org/
 */
@@ -6,10 +9,7 @@ console.log('ml5 version:', ml5.version);
 
 let bodypix;
 let bp;
-
 let cam;
-let img; // to display
-let inputImg;
 
 const options = {
   outputStride: 8, // 8, 16, or 32, default is 16
@@ -48,54 +48,63 @@ PartId  PartName
 23      leftHand
 */
 
+let myColor = [
+  '#ffb288',
+  '#e35604',
+  '#a3cfdd',
+  '#83e2ff',
+  '#98c4ff',
+  '#97e0eb',
+  '#9cd0ee',
+  '#3b8b68',
+  '#ace8d4',
+  '#ace8d4',
+  '#ffc0cb',
+  '#6699cc',
+  '#42beda',
+  '#00b8ff',
+  '#0e5218',
+  '#302d7c',
+  '#7760a4',
+  '#97449c',
+  '#a93796',
+  '#d58e88',
+  '#d4af37',
+  '#c52961',
+  '#e57248',
+  '#62827c',
+]
 
 function setup() {
   createCanvas(640, 480);
 
   cam = createCapture(VIDEO);
-  cam.size(width / 2, height / 2); // 320 x 240
   // cam.hide();
-
-  inputImg = createImage(width / 2, height / 2); // 320 x 240
-  img = createImage(inputImg.width, inputImg.height);
-
-  bodypix = ml5.bodyPix(modelReady);
+  bodypix = ml5.bodyPix(cam, modelReady);
 }
 
-
 function draw() {
-  //background(255); // ***
+  background(255);
 
   if (bp !== undefined) {
     let w = bp.segmentation.width;
     let h = bp.segmentation.height;
     let data = bp.segmentation.data;
 
-    cam.loadPixels(); // ***
-    img.loadPixels();
-    for (let y = 0; y < h; y++) {
-      for (let x = 0; x < w; x++) {
+    let gridSize = 20;
+    noStroke();
+    for (let y = 0; y < h; y += gridSize) {
+      for (let x = 0; x < w; x += gridSize) {
         let index = x + y * w; // ***
 
-        if (data[index] == 0 || data[index] == 1) {
-          // if "leftFace" or "rightFace"
-          img.pixels[index * 4 + 0] = cam.pixels[index * 4 + 0];
-          img.pixels[index * 4 + 1] = cam.pixels[index * 4 + 1];
-          img.pixels[index * 4 + 2] = cam.pixels[index * 4 + 2];
-          img.pixels[index * 4 + 3] = 255;
-        } else {
-          // transparent
-          img.pixels[index * 4 + 0] = 0;
-          img.pixels[index * 4 + 1] = 0;
-          img.pixels[index * 4 + 2] = 0;
-          img.pixels[index * 4 + 3] = 0;
+        if (data[index] >= 0) {
+          let colorIndex = data[index];
+          fill(myColor[colorIndex]);
+          ellipse(x, y, 10, 10);
         }
       }
     }
-    img.updatePixels();
   }
-  //image( cam, 0, 0, width, height );
-  image(img, 0, 0, width, height);
 }
 
 
@@ -103,7 +112,7 @@ function draw() {
 
 function modelReady() {
   console.log('Model Ready!');
-  getSegments();
+  bodypix.segmentWithParts(gotResults, options);
 }
 
 function gotResults(error, result) {
@@ -113,13 +122,5 @@ function gotResults(error, result) {
   }
   bp = result;
 
-  //console.log(bp.segmentation.data.length); //320 * 240
-  getSegments();
-}
-
-function getSegments() {
-  // update the inputImage from the current frame of the cam
-  inputImg.copy(cam, 0, 0, cam.width, cam.height, 0, 0, inputImg.width, inputImg.height);
-
-  bodypix.segmentWithParts(inputImg.canvas, gotResults, options);
+  bodypix.segmentWithParts(gotResults, options);
 }

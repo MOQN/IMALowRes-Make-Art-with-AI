@@ -1,4 +1,7 @@
 /*
+  Please note that this example code uses the 0.10.4 version of ml5.js
+  since BodyPix's segmentWithParts() function doesn't work in the latest version.
+
   This is based on the references of ml5.js
   https://ml5js.org/
 */
@@ -6,7 +9,9 @@ console.log('ml5 version:', ml5.version);
 
 let bodypix;
 let bp;
+
 let cam;
+let img;
 
 const options = {
   outputStride: 8, // 8, 16, or 32, default is 16
@@ -45,40 +50,16 @@ PartId  PartName
 23      leftHand
 */
 
-let myColor = [
-  '#ffb288',
-  '#e35604',
-  '#a3cfdd',
-  '#83e2ff',
-  '#98c4ff',
-  '#97e0eb',
-  '#9cd0ee',
-  '#3b8b68',
-  '#ace8d4',
-  '#ace8d4',
-  '#ffc0cb',
-  '#6699cc',
-  '#42beda',
-  '#00b8ff',
-  '#0e5218',
-  '#302d7c',
-  '#7760a4',
-  '#97449c',
-  '#a93796',
-  '#d58e88',
-  '#d4af37',
-  '#c52961',
-  '#e57248',
-  '#62827c',
-]
-
 function setup() {
   createCanvas(640, 480);
 
   cam = createCapture(VIDEO);
   // cam.hide();
+  img = createImage(width, height);
+
   bodypix = ml5.bodyPix(cam, modelReady);
 }
+
 
 function draw() {
   background(255);
@@ -88,20 +69,30 @@ function draw() {
     let h = bp.segmentation.height;
     let data = bp.segmentation.data;
 
-    let gridSize = 20;
-    noStroke();
-    for (let y = 0; y < h; y += gridSize) {
-      for (let x = 0; x < w; x += gridSize) {
+    img.loadPixels();
+    for (let y = 0; y < h; y++) {
+      for (let x = 0; x < w; x++) {
         let index = x + y * w; // ***
 
         if (data[index] >= 0) {
-          let colorIndex = data[index];
-          fill(myColor[colorIndex]);
-          ellipse(x, y, 10, 10);
+          // if the data is one of the body segments
+          img.pixels[index * 4 + 0] = 255;
+          img.pixels[index * 4 + 1] = 0;
+          img.pixels[index * 4 + 2] = 0;
+          img.pixels[index * 4 + 3] = 255;
+        } else {
+          // transparent
+          img.pixels[index * 4 + 0] = 0;
+          img.pixels[index * 4 + 1] = 0;
+          img.pixels[index * 4 + 2] = 0;
+          img.pixels[index * 4 + 3] = 0;
         }
       }
     }
+    img.updatePixels();
   }
+  image(cam, 0, 0);
+  image(img, 0, 0);
 }
 
 

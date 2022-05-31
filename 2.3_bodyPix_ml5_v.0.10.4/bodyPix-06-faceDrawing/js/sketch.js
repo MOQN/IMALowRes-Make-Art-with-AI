@@ -1,4 +1,7 @@
 /*
+  Please note that this example code uses the 0.10.4 version of ml5.js
+  since BodyPix's segmentWithParts() function doesn't work in the latest version.
+
   This is based on the references of ml5.js
   https://ml5js.org/
 */
@@ -48,6 +51,7 @@ PartId  PartName
 23      leftHand
 */
 
+
 function setup() {
   createCanvas(640, 480);
 
@@ -61,23 +65,26 @@ function setup() {
   bodypix = ml5.bodyPix(modelReady);
 }
 
+
 function draw() {
-  background(255);
+  //background(255); // ***
 
   if (bp !== undefined) {
     let w = bp.segmentation.width;
     let h = bp.segmentation.height;
     let data = bp.segmentation.data;
 
+    cam.loadPixels(); // ***
     img.loadPixels();
     for (let y = 0; y < h; y++) {
       for (let x = 0; x < w; x++) {
         let index = x + y * w; // ***
 
-        if (data[index] >= 0) {
-          img.pixels[index * 4 + 0] = 255;
-          img.pixels[index * 4 + 1] = 0;
-          img.pixels[index * 4 + 2] = 0;
+        if (data[index] == 0 || data[index] == 1) {
+          // if "leftFace" or "rightFace"
+          img.pixels[index * 4 + 0] = cam.pixels[index * 4 + 0];
+          img.pixels[index * 4 + 1] = cam.pixels[index * 4 + 1];
+          img.pixels[index * 4 + 2] = cam.pixels[index * 4 + 2];
           img.pixels[index * 4 + 3] = 255;
         } else {
           // transparent
@@ -90,7 +97,7 @@ function draw() {
     }
     img.updatePixels();
   }
-  image(cam, 0, 0, width, height);
+  //image( cam, 0, 0, width, height );
   image(img, 0, 0, width, height);
 }
 

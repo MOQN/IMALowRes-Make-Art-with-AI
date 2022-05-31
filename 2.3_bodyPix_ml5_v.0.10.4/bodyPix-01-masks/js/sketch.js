@@ -1,4 +1,7 @@
 /*
+  Please note that this example code uses the 0.10.4 version of ml5.js
+  since BodyPix's segmentWithParts() function doesn't work in the latest version.
+
   This is based on the references of ml5.js
   https://ml5js.org/
 */

@@ -1,4 +1,7 @@
 /*
+  Please note that this example code uses the 0.10.4 version of ml5.js
+  since BodyPix's segmentWithParts() function doesn't work in the latest version.
+
   This is based on the references of ml5.js
   https://ml5js.org/
 */
@@ -8,7 +11,8 @@ let bodypix;
 let bp;
 
 let cam;
-let img;
+let img; // to display
+let inputImg;
 
 const options = {
   outputStride: 8, // 8, 16, or 32, default is 16
@@ -51,12 +55,14 @@ function setup() {
   createCanvas(640, 480);
 
   cam = createCapture(VIDEO);
+  cam.size(width / 2, height / 2); // 320 x 240
   // cam.hide();
-  img = createImage(width, height);
 
-  bodypix = ml5.bodyPix(cam, modelReady);
+  inputImg = createImage(width / 2, height / 2); // 320 x 240
+  img = createImage(inputImg.width, inputImg.height);
+
+  bodypix = ml5.bodyPix(modelReady);
 }
-
 
 function draw() {
   background(255);
@@ -72,7 +78,6 @@ function draw() {
         let index = x + y * w; // ***
 
         if (data[index] >= 0) {
-          // if the data is one of the body segments
           img.pixels[index * 4 + 0] = 255;
           img.pixels[index * 4 + 1] = 0;
           img.pixels[index * 4 + 2] = 0;
@@ -88,8 +93,8 @@ function draw() {
     }
     img.updatePixels();
   }
-  image(cam, 0, 0);
-  image(img, 0, 0);
+  image(cam, 0, 0, width, height);
+  image(img, 0, 0, width, height);
 }
 
 
@@ -97,7 +102,7 @@ function draw() {
 
 function modelReady() {
   console.log('Model Ready!');
-  bodypix.segmentWithParts(gotResults, options);
+  getSegments();
 }
 
 function gotResults(error, result) {
@@ -107,5 +112,13 @@ function gotResults(error, result) {
   }
   bp = result;
 
-  bodypix.segmentWithParts(gotResults, options);
+  //console.log(bp.segmentation.data.length); //320 * 240
+  getSegments();
+}
+
+function getSegments() {
+  // update the inputImage from the current frame of the cam
+  inputImg.copy(cam, 0, 0, cam.width, cam.height, 0, 0, inputImg.width, inputImg.height);
+
+  bodypix.segmentWithParts(inputImg.canvas, gotResults, options);
 }
