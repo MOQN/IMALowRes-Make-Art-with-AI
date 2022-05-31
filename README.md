@@ -22,7 +22,7 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 * Week 2
   * [Slides A: the K-Nearest Neighbors algorithm (KNN)](https://docs.google.com/presentation/d/1tuk5j6BX_bzvvEWaPtBI5PR9V4TipnsUYzDHUn3tzrU/edit?usp=sharing)
   * [Slides B: Pixel Manipulation and Body Segmentation](https://docs.google.com/presentation/d/1JnE-jrZqVJ_jmeU9eEZkT3YEaWOKUKUM9ePMFleuF8g/edit?usp=sharing)
-  * Project 2. Pick one of two projects below.
+  * Project 2. (Pick one of the two projects listed below.)
     * [Option A. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
     * [Option B. Generative/Interactive Portraiture with BodyPix](https://docs.google.com/document/d/1z60zJS4bpuFPnV2n3xMPMu4lNggbQbcIrOZcJJW7I7Y/edit?usp=sharing)
 
