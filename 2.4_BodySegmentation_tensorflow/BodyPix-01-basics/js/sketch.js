@@ -7,6 +7,8 @@ let cam;
 let pose;
 let segmenter;
 
+let segmentationData = [];
+
 function setup() {
   createCanvas(640, 480);
   background(0);
@@ -21,8 +23,15 @@ function draw() {
 
   image(cam, 0, 0);
 
+  noStroke();
   fill(255);
-  text("Open the Console and see the output!", 10, 20);
+  let gridSize = 20;
+  for (let y = 0; y < cam.height; y += gridSize) {
+    for (let x = 0; x < cam.width; x += gridSize) {
+      let index = (x + y * cam.width) * 4;
+      text(segmentationData[index], x, y);
+    }
+  }
 }
 
 function camReady() {
@@ -49,12 +58,44 @@ async function getSegmentation() {
     multiSegmentation: true,
     segmentBodyParts: true
   };
-  const people = await segmenter.segmentPeople(cam.elt, segmentationConfig);
-  console.log(people);
-  if (people.length > 0) {
-    // do something with the result!
+  const segmentation = await segmenter.segmentPeople(cam.elt, segmentationConfig);
+
+  if (segmentation.length > 0) {
+    let result = await segmentation[0].mask.toImageData();
+    segmentationData = result.data;;
   }
 
   // repeat the segmentation
   getSegmentation();
 }
+
+// https://github.com/tensorflow/tfjs-models/tree/master/body-segmentation/src/body_pix
+// take a look at the index of body parts
+/*
+PartId  PartName
+-1      (no body part)
+0       left_face
+1       right_face
+2       left_upper_arm_front
+3       left_upper_arm_back
+4       right_upper_arm_front
+5       right_upper_arm_back
+6       left_lower_arm_front
+7       left_lower_arm_back
+8       right_lower_arm_front
+9       right_lower_arm_back
+10      left_hand
+11      right_hand
+12	    torso_front
+13	    torso_back
+14	    left_upper_leg_front
+15	    left_upper_leg_back
+16	    right_upper_leg_front
+17	    right_upper_leg_back
+18	    left_lower_leg_front
+19	    left_lower_leg_back
+20	    right_lower_leg_front
+21	    right_lower_leg_back
+22	    left_foot
+23	    right_foot
+*/

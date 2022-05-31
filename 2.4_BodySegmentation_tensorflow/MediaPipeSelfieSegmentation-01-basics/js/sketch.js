@@ -7,6 +7,8 @@ let cam;
 let pose;
 let segmenter;
 
+let segmentationData = [];
+
 function setup() {
   createCanvas(640, 480);
   background(0);
@@ -22,8 +24,15 @@ function draw() {
   background(0);
   image(cam, 0, 0);
 
+  noStroke();
   fill(255);
-  text("Open the Console and see the output!", 10, 20);
+  let gridSize = 30;
+  for (let y = 0; y < cam.height; y += gridSize) {
+    for (let x = 0; x < cam.width; x += gridSize) {
+      let index = (x + y * cam.width) * 4;
+      text(segmentationData[index], x, y);
+    }
+  }
 }
 
 function camReady() {
@@ -48,10 +57,10 @@ async function getSegmentation() {
   const segmentationConfig = {
     flipHorizontal: false
   };
-  const people = await segmenter.segmentPeople(cam.elt, segmentationConfig);
+  const segmentation = await segmenter.segmentPeople(cam.elt, segmentationConfig);
 
-  console.log(people);
-  if (people.length > 0) {
-    // do something with the result!
+  if (segmentation.length > 0) {
+    let result = await segmentation[0].mask.toImageData();
+    segmentationData = result.data;;
   }
 }
