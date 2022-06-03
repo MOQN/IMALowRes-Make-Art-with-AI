@@ -21,6 +21,10 @@ function draw() {
 }
 
 /*
+Try to use the part name listed below.
+i.e.  pose.rightEar.x
+      pose.rightEar.y
+
 Keypoints
 All keypoints are indexed by part id. The parts and their ids are:
 

@@ -15,7 +15,7 @@ function draw() {
 
   // add your code here.
   ellipse(hand.indexFinger.x, hand.indexFinger.y, 10, 10);
-}
+  //console.log(hand.confidence);
 
 ///// PARTS OF HAND /////
 /*
