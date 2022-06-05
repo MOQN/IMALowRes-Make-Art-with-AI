@@ -4,7 +4,6 @@
 // Demo: https://storage.googleapis.com/tfjs-models/demos/body-pix/index.html
 
 let cam;
-let pose;
 let segmenter;
 
 let img; // output
