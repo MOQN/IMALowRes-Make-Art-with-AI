@@ -6,6 +6,9 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
 * [Empty Project for Text Editor](https://www.dropbox.com/sh/axr5tfwqomjrxsi/AAAYo3AbYoEjpVbAGl-6pvAGa?dl=1)
 
+## Empty Project with p5.js and ml5.js
+* [Example Codes on p5.js Web Editor](https://docs.google.com/document/d/1Q_YdeTqh_sqW4BFk4psZLRyYnflj_BFx-0fUYdzjvZs/edit?usp=sharing)
+
 ## Class Materials
 * [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
   * Please review the materials in Week 1.
@@ -27,8 +30,8 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
     * [Option B. Generative/Interactive Portraiture with BodyPix](https://docs.google.com/document/d/1z60zJS4bpuFPnV2n3xMPMu4lNggbQbcIrOZcJJW7I7Y/edit?usp=sharing)
 
 * Week 3
-  * [Slides: Audio Input + Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
-  * [Project 3. Generative Visuals with CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)
+  * [Slides: Audio Input, Sound Recognition and Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
+  * [Optional, Project 3. Audio Interface with SoundClassifier or CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)
 
 ## Course Information
 * Instructor: J.H. Moon
