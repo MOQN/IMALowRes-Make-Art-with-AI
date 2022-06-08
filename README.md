@@ -6,8 +6,8 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 * [Empty Project on Glitch](https://glitch.com/edit/#!/empty-project-ml5)
 * [Empty Project for Text Editor](https://www.dropbox.com/sh/axr5tfwqomjrxsi/AAAYo3AbYoEjpVbAGl-6pvAGa?dl=1)
 
-## Empty Project with p5.js and ml5.js
-* [Example Codes on p5.js Web Editor](https://docs.google.com/document/d/1Q_YdeTqh_sqW4BFk4psZLRyYnflj_BFx-0fUYdzjvZs/edit?usp=sharing)
+## Course Example Codes on p5.js Web Editor
+* [Example Codes](https://docs.google.com/document/d/1Q_YdeTqh_sqW4BFk4psZLRyYnflj_BFx-0fUYdzjvZs/edit?usp=sharing)
 
 ## Class Materials
 * [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
