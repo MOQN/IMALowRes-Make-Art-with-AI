@@ -31,7 +31,7 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 * Week 3
   * [Slides: Audio Input, Sound Recognition and Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
-  * [Optional, Project 3. Audio Interface with SoundClassifier or CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)
+  * (Optional) [Project 3. Audio Interface with SoundClassifier or CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)
 
 ## Course Information
 * Instructor: J.H. Moon
