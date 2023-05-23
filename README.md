@@ -17,7 +17,11 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
   * [Make Art with AI](https://docs.google.com/document/d/1wEHQckrIxtYHAeajhaSw7R-xvwDD1yiKfBmxzo8DmtA/edit?usp=sharing)
 
 * Week 1
-  * [Slides: Introduction to the Course, ml5.js and Pose Estimation](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
+  * Slides
+    * [1.1 - Introduction to the Course](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
+    * [1.2 - What can we do with AI?](https://docs.google.com/presentation/d/1jCYBdUOqadvGD0sjmWQuo80CipW1jipbBisAW6HIshY/edit?usp=sharing)
+    * [1.3 - Introduction to ml5.js and Pose Estimation](https://docs.google.com/presentation/d/1FxCB_Yv0PLqoqhsJXRdSdrpo33P3I_6Tj55u2k8qRj0/edit?usp=sharing)
+    * [1.4 - ChatGPT as a Collaborator](https://docs.google.com/presentation/d/1s2hNb87cuzkHBLmWrMPzYZP5r2U8uiLK4s_omLJG_lQ/edit?usp=sharing)
   * [Project 1. Interactive Experience with Body Movement](https://docs.google.com/document/d/1PQ4DxPPqXOn0XlG0NkESyouAs2oGpPp3FrQ7qoP1lcc/edit?usp=sharing)
 
 * Week 2
