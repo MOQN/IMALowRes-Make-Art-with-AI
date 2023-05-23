@@ -3,7 +3,6 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Empty Project with p5.js and ml5.js
 * [Empty Project on p5.js Web Editor](https://editor.p5js.org/MOQN/sketches/2RIVSxae0)
-* [Empty Project for Text Editor](https://www.dropbox.com/sh/axr5tfwqomjrxsi/AAAYo3AbYoEjpVbAGl-6pvAGa?dl=1)
 
 ## Course Example Codes on p5.js Web Editor
 * [Example Codes](https://docs.google.com/document/d/1KqxyHmfxd-98slLhhl3gkE6uxcdhIt2cWgAPBm6ryMo/edit?usp=sharing)
