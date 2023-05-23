@@ -43,10 +43,10 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
     * Class 3: May 30 Tue, 8 PM to 11 PM (NY Time)
     * Class 4: June 6 Tue, 8 PM to 11 PM (NY Time)
   * In-Person Session
-    * Class 1: May 25 Thu, 8 AM to 11 AM (China Time)
-    * Class 2: May 30 Tue, 8 AM to 11 AM (China Time)
-    * Class 3: June 1 Thu, 8 AM to 11 AM (China Time)
-    * Class 4: June 6 Tue, 8 AM to 11 AM (China Time)
+    * Class 1: May 25 Thu, 10 AM to 1 PM (SH Time)
+    * Class 2: May 30 Tue, 10 AM to 1 PM (SH Time)
+    * Class 3: June 1 Thu, 10 AM to 1 PM (SH Time)
+    * Class 4: June 6 Tue, 10 AM to 1 PM (SH Time)
 
 * [Syllabus](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit?usp=sharing)
   * [Resources](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.vv8cfz9wl2zr)
