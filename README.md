@@ -9,9 +9,11 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Class Materials
 * [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
+  * Slides
+    * [1.extra - Creative Coding Review](https://docs.google.com/presentation/d/1jvdh5Bh2OavjeFnDi0Td2qgByoworV6EvY7YveieioM/edit?usp=sharing)
+  * Addtiontal Resources: [Creative Coding Lab Example Codes](https://docs.google.com/document/d/15cr6qsJfbtwk2WWQ-0sC6CXOFDIO22jsSPhnrRx7pbo/edit?usp=sharing)
   * Please review the materials in Week 1.
   * Addtional workshops can be also provided. Please request!
-  * Addtiontal Resources: [Creative Coding Lab Example Codes](https://docs.google.com/document/d/15cr6qsJfbtwk2WWQ-0sC6CXOFDIO22jsSPhnrRx7pbo/edit?usp=sharing)
 
 * Main Project
   * [Make Art with AI](https://docs.google.com/document/d/1wEHQckrIxtYHAeajhaSw7R-xvwDD1yiKfBmxzo8DmtA/edit?usp=sharing)
@@ -34,6 +36,9 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 * Week 3
   * [Slides: Audio Input, Sound Recognition and Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
   * (Optional) [Project 3. Audio Interface with SoundClassifier or CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)
+
+* Week 4
+  * Sharing Day!
 
 ## Course Information
 * Instructor: J.H. Moon
