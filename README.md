@@ -18,7 +18,7 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 * Main Project
   * [Make Art with AI](https://docs.google.com/document/d/1wEHQckrIxtYHAeajhaSw7R-xvwDD1yiKfBmxzo8DmtA/edit?usp=sharing)
 
-* Week 1
+* Class 1
   * Slides
     * [1.1 - Introduction to the Course](https://docs.google.com/presentation/d/1hExSFOSWi6ZiNTTa6shv1atxcUyxjZ3i8HASBGqGqks/edit?usp=sharing)
     * [1.2 - What can we do with AI?](https://docs.google.com/presentation/d/1jCYBdUOqadvGD0sjmWQuo80CipW1jipbBisAW6HIshY/edit?usp=sharing)
@@ -26,17 +26,17 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
     * [1.4 - ChatGPT as a Collaborator](https://docs.google.com/presentation/d/1s2hNb87cuzkHBLmWrMPzYZP5r2U8uiLK4s_omLJG_lQ/edit?usp=sharing)
   * [Project 1. Interactive Experience with Body Movement](https://docs.google.com/document/d/1PQ4DxPPqXOn0XlG0NkESyouAs2oGpPp3FrQ7qoP1lcc/edit?usp=sharing)
 
-* Week 2
+* Class 2
   * Slides
     * [2.1 - the KNN algorithm](https://docs.google.com/presentation/d/1tuk5j6BX_bzvvEWaPtBI5PR9V4TipnsUYzDHUn3tzrU/edit?usp=sharing)
     * [2.2 - AI Generated Artwork](https://docs.google.com/presentation/d/1WzJXrf6RCEH1eG-wx7UziY-DXi4icyOvU73_HZBFVXs/edit?usp=sharing)
   * [Project 2. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
 
-* Week 3
+* Class 3
   * [Slides: Audio Input, Sound Recognition and Pitch Detection](https://docs.google.com/presentation/d/1RizR5VWvKvRpEMD45qQJYWkHNIGFKIdoEH0_WzzrziY/edit?usp=sharing)
   * (Optional) [Project 3. Audio Interface with SoundClassifier or CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)
 
-* Week 4
+* Class 4
   * Sharing Day!
 
 ## Course Information
