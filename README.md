@@ -33,10 +33,16 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
   * [Project 2. Unconventional Interaction with KNN Classification](https://docs.google.com/document/d/1-KVWr_3XXTs4tJIEXamKWyGwqN5ZSZhCmNKBt7iaQCU/edit?usp=sharing)
 
 * Class 3
-  * Slides:
+  * Slides from Creative Coding Lab (IMA NYU Shanghai):
     * [3.1 Sound (CCLab)](https://docs.google.com/presentation/d/1e11Ssh_PDe0Y1O2vB54DNUlwGgG27ruUr60G5TwNe3k/edit?usp=sharing)
     * [3.2 Pixels, Pixel Iteration & Manipulation (CCLab)](https://docs.google.com/presentation/d/1VJxdNFkQBSRU8NMq-LmU-1-1cj9usAscKTgND0xf2Vw/edit?usp=sharing)
-  * (Optional Projects)
+    * Object Oriented Programming
+      * [Classes](https://docs.google.com/presentation/d/1aBZkKs981hAN9h-3kxhOrEBzbMosNLMNI066n9yHaYA/edit?usp=drive_link)
+      * [OOP + Arrays](https://docs.google.com/presentation/d/1uDFK-lF-IeaQs3VADiWOmRnzG56cn64TQ1txjLY7AkA/edit?usp=drive_link)
+      * [OOP + Dynamic Arrays](https://docs.google.com/presentation/d/1D-7Q1aJFilxvbWVkJOIh2tbfhAUPwuXEy-9oUGsMA24/edit?usp=drive_link)
+      * [Interactive Objects](https://docs.google.com/presentation/d/15W-Idc9jZHDdmT7AOpgA6M_4B2ht-Z0iqPsCaBWCwOs/edit?usp=drive_link)
+      * [Interaction between Objects](https://docs.google.com/presentation/d/19ZcTj2AFoQMHbXXLA50wG0KouW0qYpgNMpJ1uSXutjY/edit?usp=drive_link)
+  * _Optional_ Projects
     * [Project 3-1. Generative/Interactive Portraiture with BodyPix](https://docs.google.com/document/d/1z60zJS4bpuFPnV2n3xMPMu4lNggbQbcIrOZcJJW7I7Y/edit?usp=sharing)
     * [Project 3-2. Audio Visualization with AudioIn & CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)
 
