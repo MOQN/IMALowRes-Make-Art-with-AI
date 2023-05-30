@@ -5,7 +5,7 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 * [Empty Project on p5.js Web Editor](https://editor.p5js.org/MOQN/sketches/2RIVSxae0)
 
 ## Course Example Codes on p5.js Web Editor
-* [Example Codes](https://docs.google.com/document/d/1KqxyHmfxd-98slLhhl3gkE6uxcdhIt2cWgAPBm6ryMo/edit?usp=sharing)
+* [Example Codes | Machine Learning Models | p5.js + ml5.js / tensorflow](https://docs.google.com/document/d/1KqxyHmfxd-98slLhhl3gkE6uxcdhIt2cWgAPBm6ryMo/edit?usp=sharing)
 
 ## Class Materials
 * [Course Preparation](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.6gser51buvmz)
