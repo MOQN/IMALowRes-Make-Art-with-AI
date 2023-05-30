@@ -36,7 +36,7 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
   * Slides:
     * [3.1 Sound (CCLab)](https://docs.google.com/presentation/d/1e11Ssh_PDe0Y1O2vB54DNUlwGgG27ruUr60G5TwNe3k/edit?usp=sharing)
     * [3.2 Pixels, Pixel Iteration & Manipulation (CCLab)](https://docs.google.com/presentation/d/1VJxdNFkQBSRU8NMq-LmU-1-1cj9usAscKTgND0xf2Vw/edit?usp=sharing)
-  * (Optional Project)
+  * (Optional Projects)
     * [Project 3-1. Generative/Interactive Portraiture with BodyPix](https://docs.google.com/document/d/1z60zJS4bpuFPnV2n3xMPMu4lNggbQbcIrOZcJJW7I7Y/edit?usp=sharing)
     * [Project 3-2. Audio Visualization with AudioIn & CREPE](https://docs.google.com/document/d/1RQB4pn9253Fx6-t1FRSgm14QiqnTjPnzf_mstdnUxHA/edit?usp=sharing)
 
