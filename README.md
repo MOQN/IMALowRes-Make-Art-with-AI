@@ -1,4 +1,4 @@
-# Make Art with AI | Summer 2023
+# Make Art with AI | Summer 2024
 
 IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
