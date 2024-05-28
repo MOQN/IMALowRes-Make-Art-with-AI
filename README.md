@@ -4,6 +4,8 @@ IMA Low Res | NYU Tisch School of the Arts + NYU Shanghai
 
 ## Course Information
 
+- [Course Note](https://docs.google.com/document/d/1iiF3GOkYGDNm66weSy9SvS1ku0wGW2P05HD-Sl-jr0g/edit?usp=sharing)
+- [Notion Page](https://www.notion.so/imalowres/Class-Make-Art-with-AI-24-01aeb675a2c44460b39ab66df12e2fd7)
 - [Syllabus](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit?usp=sharing)
   - [Resources](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.vv8cfz9wl2zr)
   - [Course Schedule Overview](https://docs.google.com/document/d/1OkArfwlWlIjAMlWhj6u7zHg19G9XxiaqrDXyquQl6XQ/edit#bookmark=id.fryx8j1d3h84)

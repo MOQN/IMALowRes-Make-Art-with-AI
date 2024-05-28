@@ -1,11 +1,11 @@
 // Add the URL of the model trained with Teachable Machine
-const poseModelURL = "https://teachablemachine.withgoogle.com/models/vIfJJYrgC/";
+let poseModelURL = "https://teachablemachine.withgoogle.com/models/vIfJJYrgC/";
 
 let video;
 let pose;
-let label = "";
-let labels = [];
-let confidences = [];
+
+let label = "Model Loading...";
+let results = [];
 
 function setup() {
   createCanvas(640, 480);
@@ -18,13 +18,21 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(100);
   image(video, 0, 0);
 
-  for (let i = 0; i < labels.length; i++) {
-    text(labels[i], 100 + i * 50, 100);
-    text(confidences[i], 100 + i * 50, 120);
+  // display the whole labels
+  textSize(10);
+  fill(0, 255, 0);
+  for (let i = 0; i < results.length; i++) {
+    text(results[i].label, 10, 100 + i * 35);
+    text(results[i].confidence, 10, 100 + i * 35 + 15);
   }
+
+  // display the label with the highest confidence
+  fill(0, 255, 0);
+  textSize(16);
+  text(label, 10, 20);
 
   // draw the keypoints and skeleton
   if (pose) {
@@ -43,11 +51,6 @@ function draw() {
       text(name, x + 10, y);
     }
   }
-
-  // draw the label
-  fill(0, 255, 0);
-  textSize(16);
-  text(label, 10, 20);
 }
 
 
@@ -77,21 +80,25 @@ async function predict() {
 
   // 2) run input through teachable machine classification model
   const prediction = await classifier.predict(posenetOutput);
+  // get the results
+  results = []; // empty the array
   for (let i = 0; i < maxPredictions; i++) {
-    labels[i] = prediction[i].className;
-    confidences[i] = float(prediction[i].probability.toFixed(4));
+    results[i] = {
+      label: prediction[i].className,
+      confidence: float(prediction[i].probability.toFixed(4))
+    };
   }
 
-  // 3) set the label with the highest confidence
+  // set the label with the highest confidence
   let highestConfidence = 0;
   let highestConfidenceIndex = 0;
-  for (let i = 0; i < confidences.length; i++) {
-    if (confidences[i] > highestConfidence) {
-      highestConfidence = confidences[i];
+  for (let i = 0; i < results.length; i++) {
+    if (results[i].confidence > highestConfidence) {
+      highestConfidence = results[i].confidence;
       highestConfidenceIndex = i;
     }
   }
-  label = labels[highestConfidenceIndex];
+  label = results[highestConfidenceIndex].label;
 
   // get the pose
   getResult(pose);
